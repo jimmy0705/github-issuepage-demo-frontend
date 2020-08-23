@@ -1,0 +1,19 @@
+#dropdown-item-button {
+    color: black;
+    background-color: white;
+    width: 160px;
+
+}
+
+.card {
+    border-radius: 0;
+}
+
+
+.Issue-list {
+    margin-top: 30px;
+}
+
+.card:hover {
+    background-color: #7b766b21;
+}
