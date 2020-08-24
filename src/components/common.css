@@ -17,3 +17,11 @@
 .card:hover {
     background-color: #7b766b21;
 }
+
+.filter{
+    width: 200px;
+}
+
+.container {
+    padding: 90px 0;
+}
