@@ -7,7 +7,7 @@ import { Container,Row,Col } from 'react-bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import IssueList from './components/IssueList'
-//import AddButton from './components/AbbButton'
+import AddButton from './components/AbbButton'
 import Filter from './components/Filter'
 
 
@@ -145,7 +145,7 @@ class App extends React.Component{
       <Container>
         <Row>
     <Col sm={8}><Filter/></Col>
-      {/* <Col sm={4}><AddButton/></Col> */}
+      <Col style={{textAlign:"right"}} sm={4}><AddButton/></Col>
     </Row>
         
         

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 
 
 
@@ -23,8 +23,8 @@ function AddButton() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch static backdrop modal
+      <Button variant="success" onClick={handleShow}>
+        Add Issue
       </Button>
 
       <Modal
@@ -34,17 +34,18 @@ function AddButton() {
         keyboard={false}
       >
         <Modal.Header closeButton>
-          <Modal.Title>Modal title</Modal.Title>
+          <Modal.Title>Submit Issue</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          I will not close if you click outside me. Don't even try to press
-          escape key.
+         {/* form goes here */}
+
+         {/* form goes here */}
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary">Understood</Button>
+        
         </Modal.Footer>
       </Modal>
     </>
