@@ -1,12 +1,15 @@
 import React,{useState} from 'react';
 
 
-
-import { Button,Modal } from 'react-bootstrap';
+import PostForm from './Form'
+import { Button,Modal,Form } from 'react-bootstrap';
 
 const bttn = {
   textAlign:"right"
 };
+
+//====//
+
 
 
 function AddButton() {
@@ -38,6 +41,8 @@ function AddButton() {
         </Modal.Header>
         <Modal.Body>
          {/* form goes here */}
+
+         <PostForm/>
 
          {/* form goes here */}
         </Modal.Body>

@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 //import logo from './logo.svg';
 //import './App.css';
 //import 'semantic-ui-css/semantic.min.css'
@@ -130,12 +131,25 @@ const data = [
 class App extends React.Component{
 
   state={
-   issues:[]
+   issues:[],
+   filter:"all"
   }
 
 
-  componentDidMount(){
-    this.setState({issues:data})
+  // componentDidMount(){
+  //   // this.setState({issues:data})
+  // }
+
+  componentDidMount() {
+    axios.get(`http://localhost:9000/api/issues`)
+      .then(res => {
+        const data1 = res.data;
+        this.setState({ issues:data1 });
+      })
+      .catch(err => {
+        console.log(err);
+        //res.send("not posted")
+      });
   }
 
   render(){
